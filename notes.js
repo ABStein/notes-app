@@ -24,7 +24,7 @@ const addNote = (title, body) => {
 // if a note meets the standards to be saved, we stringify the json coming in and write the json object to notes.json
 const saveNotes = (notes) => {
     const dataJSON = JSON.stringify(notes);
-    fs.writeFileSync('notes.json', dataJSON)
+    fs.writeFileSync('notes.json', dataJSON);
 }
 
 // fucntion to load in existing notes into notes.json
